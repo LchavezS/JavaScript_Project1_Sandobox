@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Java Project</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.js">
+<body>
+    
+<script>
+    var myNoun = "dog";
+        var myAdjective = "black";
+        var myVerb = "ran";
+        var myAdverb = "fast";
+
+        myNoun = "La";
+        myAdjective = "bicicleta";
+        myVerb = "volo";
+        myAdverb = "rapidamente";
+
+        /*Concatenate the string to show a message.
+        You can change the variable values
+    
+        */
+
+        var palabrasEnBlanco = "The" + " " + myNoun + " " + myAdjective + " " + myVerb + " " + myAdverb + " to the store.";
+        console.log(palabrasEnBlanco);
+
+        var palabrasEnBlanco = "The" + " " + myNoun + " " + myAdjective + " " + myVerb + " " + myAdverb + " a la tienda.";
+        console.log(palabrasEnBlanco);
+
+        //Accessing Multi-dimensional Arrays.
+        var myArrays = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+        /*
+        Arrays:          [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+        Index:                0          1           2
+        Internal Index:    0  1  2    0  1  2    0   1  2
+        
+        */
+         
+        // console.log(myArrays[0]);
+        console.log(myArrays[1][0]);
+        console.log(myArrays[1][1]);
+        console.log(myArrays[1][2]);
+
+        //Push -- .push()
+        var weatherSeasons = ["Winter", "Autumn", "Spring", ];
+        
+        weatherSeasons.push("Summer ");
+        console.log(weatherSeasons);
+
+        //.pop()
+        var weatherSeasons1 = ["Winter", "Autumn", "Spring", "Summer"];
+        var weather;
+
+        weather = weatherSeasons1.pop();
+        console.log(weatherSeasons1);
+        console.log(weather);
+
+        //.shift:
+        var weatherSeasons2 = ["Winter", "Autumn", "Spring", "Summer"];
+        weatherSeasons2.shift();
+        console.log(weatherSeasons2)
+
+        //.unshift():
+        var weatherSeasons3 = ["Winter", "Autumn", "Spring"];
+        weatherSeasons3.unshift("Summer"); //Add at the beginning of the array
+        console.log(weatherSeasons3);
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
